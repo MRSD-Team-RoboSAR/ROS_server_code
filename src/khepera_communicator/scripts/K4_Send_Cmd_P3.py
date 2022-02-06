@@ -70,7 +70,7 @@ def timer_callback(event):
         # UDP communication
         serverSock.sendto(bytes(str(W) + 'x' + str(V),'utf-8'), addr)
         try:
-            response = serverSock.recv(4096)
+            response = serverSock.recv(25000)
             print("\nResponse:\n{}".format(response.decode('utf-8')))
         except:
             print("Nothing received over socket.")
