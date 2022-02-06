@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<launch>
+  <node name="send_cmd" pkg="khepera_communicator" type="Central_Algorithm_Template_Without_Vicon_Input.py">
+  </node>
+
+  <node name="khepera_comms" pkg="khepera_communicator" type="K4_Send_Cmd_P3.py">
+  </node>
+
+</launch>
